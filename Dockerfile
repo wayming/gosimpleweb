@@ -32,4 +32,5 @@ FROM scratch
 COPY --from=builder /dist/main /
 
 # Command to run
+EXPOSE 8080
 ENTRYPOINT ["/main"]
